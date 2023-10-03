@@ -26,5 +26,6 @@ let isloggedIn = false
 // non primitive datatypes
 
 // object
+//array
 
 console.log(typeof null)
