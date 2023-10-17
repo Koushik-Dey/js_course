@@ -1,37 +1,35 @@
 const user = {
-    username:"koushik",
+    username:"Koushik",
     loginCount:8,
     signedIn:true,
 
-    getuserDetails:function(){
-       // console.log("Got user details from database")
-    //    console.log(`Username:${this.username}`)
-    console.log(this)
+    getUserDetails:function() {
+        // console.log("Got user details form database")
+        // console.log(`Username: ${this.username}`)
+        console.log(this)
     }
 }
 
-// console.log(user.username)
-// console.log(user.getuserDetails())
+// console.log(user.getUserDetails())
 
 // console.log(this)
 
-// const promiseOne = new Promise()
-// const date = new Date()
 
-function Employee(username,loginCount,isloggedIn) {
-    this.username= username,
+function User(username,loginCount,isLoggedIn) {
+    this.username = username,
     this.loginCount = loginCount,
-    this.isloggedIn = isloggedIn
+    this.isLoggedIn = isLoggedIn
 
-    this.greetings= function () {
+    this.greetings=function () {
         console.log(`Welcome ${this.username}`)
     }
 
     return this
 }
 
-const employeeOne = new Employee("Koushik",12,true)
-const employeeTwo = new Employee("hitesh" , 12,true)
+const userOne = new User("Koushik" , 12 , true)
+const userTwo = new User("hitesh",11,false)
+console.log(userOne.constructor)
+// console.log(userTwo.greetings())
 
-console.log(employeeOne.constructor)
-// console.log(employeeTwo.greetings())
+
