@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+
+  <script>
+    function addLanguage(langName) {
+      let li = document.createElement("li");
+      li.innerHTML = `${langName}`; //this will traverse the whole dom
+
+      let ul = document.querySelector(".language");
+
+      ul.appendChild(li);
+    }
+
+    addLanguage("Python");
+    addLanguage("Golang");
+
+    function addOptiLanguage(langName) {
+      let li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName)); // this is and optimized approach
+
+      document.querySelector(".language").appendChild(li);
+    }
+
+    addOptiLanguage("Golang");
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+
+    //edit
+    const firstlang = document.querySelector("li:first-child");
+
+    firstlang.outerHTML = "<li>TypeScript</li>";
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+
+    lastLang.remove();
+  </script>
+</html>
