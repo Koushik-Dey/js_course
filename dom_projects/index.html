@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom todo app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#212121] text-white">
+    <div class="max-w-[30%] mx-auto">
+      <div class="text-center mt-10">
+        <h1 class="text-4xl font-semibold">Todo App</h1>
+      </div>
+      <div class="mt-5">
+        <form class="">
+          <input
+            id="todo-input"
+            type="text"
+            placeholder="Enter Todo"
+            class="w-full bg-gray-800 p-3 rounded-lg font-md"
+          />
+          <div class="text-center mt-3">
+            <button type="submit" class="px-3 py-2 rounded-lg bg-blue-700">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="mt-10">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
