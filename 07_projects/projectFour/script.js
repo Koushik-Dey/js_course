@@ -90,3 +90,5 @@ function newGame() {
     playGame = true;
   });
 }
+
+console.log(1 + false);
