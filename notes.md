@@ -2,12 +2,14 @@
 
 ## OOP it is a programming paradaem
 
-## Objec
+## Object
+
 - collection of properties and methods
 
 ## why use oop
 
 ## parts of object oriented programming
+
 object literal
 
 -Constructor function
@@ -16,6 +18,7 @@ object literal
 -Instances(new, this)
 
 ## 4 pillars
+
 Abstraction
 Encapsulation
 Inheritance

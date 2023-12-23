@@ -76,7 +76,7 @@ function endGame() {
 }
 
 function newGame() {
-  let newgame = document.querySelector("#newGame");
+  let newgame = document.querySelector("#newame");
 
   newgame.addEventListener("click", (e) => {
     randomNumber = parseInt(Math.random() * 100 + 1);

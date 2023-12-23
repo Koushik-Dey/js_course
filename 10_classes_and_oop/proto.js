@@ -1,30 +1,31 @@
 function multiply5(num) {
-    return num * 5
+  return num * 5;
 }
 
-multiply5.power = 2
+multiply5.power = 2;
 
-console.log(multiply5(5))
-console.log(multiply5.power)
-console.log(multiply5.prototype)
+console.log(multiply5(5));
+console.log(multiply5.power);
+console.log(multiply5.prototype);
 
-function createUser(username,score) {
-    this.username = username
-    this.score = score
+function createUser(username, score) {
+  this.username = username;
+  this.score = score;
 }
 
 createUser.prototype.increment = function () {
-    this.score++
-}
+  this.score++;
+};
 
 createUser.prototype.printMe = function () {
-    console.log(`price is ${this.score}`)
-}
+  console.log(`Score is ${this.score}`);
+};
 
-const one = new createUser("hitesh",25)
-const two =  new createUser("two", 250)
+const userOne = new createUser("mario", 50);
+const userTwo = new createUser("luigi", 250);
 
-one.printMe()
+userOne.printMe();
+console.log(userOne);
 
 /*
 
